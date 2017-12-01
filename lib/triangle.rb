@@ -18,11 +18,11 @@ class Triangle
 end
 
   def validate_triangle
-    
+    if @a || @b || @c == 0
+      raise TriangleError
+    end
   end
 
 class TriangleError < StandardError
-  if @a || @b || @c == 0
-    raise TriangleError
-  end
+
 end
