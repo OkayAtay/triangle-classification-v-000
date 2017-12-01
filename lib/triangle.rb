@@ -10,7 +10,7 @@ class Triangle
     if @side1 == @side2 && @side3
       :equilateral
     elsif @side1 == @side2 || @side3
-      :isoscles
+      :isosceles
     end
   end
 end
