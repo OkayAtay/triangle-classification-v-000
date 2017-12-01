@@ -1,6 +1,6 @@
 class Triangle
   attr_accessor :a, :b, :c, :equilateral, :isosceles, :scalene
-  def initialize(side1, side2, side3)
+  def initialize(a, b, c)
     @side1 = side1
     @side2 = side2
     @side3 = side3
@@ -12,7 +12,7 @@ class Triangle
     end
     if @side1 == @side2 && @side3
       :equilateral
-    elsif @side1 == @side2 || @side3
+    elsif @a == @b || @a == @c || @b == @c
       :isosceles
     else
       :scalene
