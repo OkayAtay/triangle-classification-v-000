@@ -15,13 +15,15 @@ class Triangle
       :scalene
     end
   end
-end
 
   def validate_triangle
     if @a || @b || @c == 0
       raise TriangleError
     end
   end
+end
+
+
 
 class TriangleError < StandardError
 
