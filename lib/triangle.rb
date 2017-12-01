@@ -7,9 +7,6 @@ class Triangle
   end
 
   def kind
-    if @a || @b || @c == 0
-      raise TriangleError
-    end
     if @side1 == @side2 && @side3
       :equilateral
     elsif @a == @b || @a == @c || @b == @c
