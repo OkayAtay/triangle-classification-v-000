@@ -1,13 +1,13 @@
 class Triangle
-  attr_accessor :a, :b, :c, :equilateral, :isosceles, :scalene
+  attr_accessor :a, :b, :c
   def initialize(a, b, c)
-    @side1 = side1
-    @side2 = side2
-    @side3 = side3
+    @a = a
+    @b = b
+    @c = c
   end
 
   def kind
-    if @side1 || @side2 | @side3 == 0
+    if @a || @b || @c == 0
       raise TriangleError
     end
     if @side1 == @side2 && @side3
